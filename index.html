@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños - Madisson</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Solo estos 4 meta tags esenciales -->
+    <meta property="og:title" content="Invitación de Cumpleaños - Madisson">
+    <meta property="og:description" content="¡Te invito a mi fiesta!">
+    <meta property="og:image" content="https://flowerstvn07.github.io/Invitacion_Madisson/assets/previuw.png">
+    <meta property="og:url" content="https://flowerstvn07.github.io/Invitacion_Madisson/">
+</head>
+<body>
+    <div class="phone-container">
+        <!-- Pantalla 1: Barra de carga -->
+        <div class="screen active" id="screen1">
+            <!-- Elementos decorativos -->
+            <img src="assets/Ariel1.png" alt="Ariel" class="decoration ariel1">
+            <img src="assets/caracol.png" alt="Caracol" class="decoration caracol1">
+            <img src="assets/coralVerde.png" alt="Coral Verde" class="decoration coral1">
+            <img src="assets/coralRosa.png" alt="Coral Rosa" class="decoration coral20">
+            <img src="assets/oralAzul.png" alt="Coral Azul" class="decoration coral21">
+            <img src="assets/coralRosa.png" alt="Coral Rosa" class="decoration coral22">
+            <img src="assets/cangrejo.png" alt="Cangrejo" class="decoration cangrejo">
+            <img src="assets/flander.png" alt="Flander" class="decoration flander">
+            <img src="assets/tortuga.png" alt="Tortuga" class="decoration tortuga1">
+            <img src="assets/estrellaAzul.png" alt="Estrella Azul" class="decoration estrella20">
+            <img src="assets/estrellaRosa.png" alt="Estrella Rosa" class="decoration estrella1">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja1">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja2">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja3">
+            
+            <div class="content-container">
+                <div class="loading-container">
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                    </div>
+                    <div class="loading-text">Cargando invitación...</div>
+                </div>
+                <div class="invitation-text">Tienes una Invitación</div>
+            </div>
+            <div class="wave-transition"></div>
+        </div>
+
+        <!-- Pantalla 2: Valeria Cumple -->
+        <div class="screen hidden" id="screen2">
+            <!-- Elementos decorativos -->
+            <img src="assets/Ariel2.png" alt="Ariel" class="decoration ariel2">
+            <img src="assets/numero1.png" alt="Numero" class="decoration numero">
+            <img src="assets/tortuga.png" alt="Tortuga" class="decoration tortuga2">
+            <img src="assets/caballito.png" alt="Caballito" class="decoration caballito">
+            <img src="assets/caracolRosa.png" alt="Caracol Rosa" class="decoration caracol2">
+            <img src="assets/coralRosa.png" alt="Coral Rosa" class="decoration coral31">
+            <img src="assets/coralCeleste.png" alt="Coral Celeste" class="decoration coral32">
+            <img src="assets/coralVerde.png" alt="Coral Verde" class="decoration coral33">
+            <img src="assets/coralVerde.png" alt="Coral Verde" class="decoration coral34">
+            <img src="assets/oralAzul.png" alt="Coral Azul" class="decoration coral35">
+            <img src="assets/ostra.png" alt="Ostra" class="decoration ostra1">
+            <img src="assets/cangrejo.png" alt="Cangrejo" class="decoration cangrejo2">
+            <img src="assets/estrellaAzul.png" alt="Estrella Azul" class="decoration estrella2">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja4">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja5">
+            
+            <div class="content-container">
+                <div class="name">Madisson</div>
+                <div class="event">Cumple</div>
+                <button class="continue-btn" onclick="nextScreen(3)">Ver detalles</button>
+            </div>
+            <div class="wave-transition"></div>
+        </div>
+
+        <!-- Pantalla 3: Detalles de la fiesta -->
+        <div class="screen hidden" id="screen3">
+            <!-- Elementos decorativos -->
+            <img src="assets/Ariel3.png" alt="Ariel" class="decoration ariel3">
+            <img src="assets/Triton.png" alt="Triton" class="decoration triton">
+            <img src="assets/coralVerde.png" alt="Coral Verde" class="decoration coral4">
+            <img src="assets/oralAzul.png" alt="Coral Azul" class="decoration coral41">
+            <img src="assets/coralRosa.png" alt="Coral Rosa" class="decoration coral42">
+            <img src="assets/oralAzul.png" alt="Coral Azul" class="decoration coral43">
+            <img src="assets/numero1.png" alt="Numero" class="decoration numero2">
+            <img src="assets/caracol.png" alt="Caracol Azul" class="decoration caracol3">
+            <img src="assets/ubicacion.png" alt="Ubicacion" class="decoration ubicacion">
+            <img src="assets/flander.png" alt="Flander" class="decoration flander2">
+            <img src="assets/cangrejo.png" alt="Cangrejo" class="decoration cangrejo3">
+            <img src="assets/caballito.png" alt="Caballito" class="decoration caballito2">
+            <img src="assets/tortuga.png" alt="Tortuga" class="decoration tortuga3">
+            <img src="assets/estrellaRosa.png" alt="Estrella Rosa" class="decoration estrella3">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja6">
+            <img src="assets/Burbuja.png" alt="Burbuja" class="decoration burbuja7">
+            
+            <div class="content-container">
+                <div class="name-large">Madisson</div>
+                <div class="accompany-text">Acompáñame el:</div>
+                <div class="event-date">Domingo 7 de Diciembre</div>
+                <div class="location">Colonia El Tamarindo, Quinta el Morro<br>Hora: 1:30</div>
+                <!-- Agregar después de la ubicación y antes del "no faltes" -->
+                <div class="buttons-container">
+                    <button class="info-btn" onclick="showInfo()">Presiona aquí</button>
+                    <button class="location-btn" onclick="openLocation()">Ver ubicación</button>
+                </div>
+                <div class="no-faltes">¡No faltes!</div>
+            </div>
+            <div class="wave-transition"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
